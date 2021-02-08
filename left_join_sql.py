@@ -47,7 +47,7 @@ def main():
     create()
     # insert_data()
     test()
-    #view()
+    view()
 
 
 

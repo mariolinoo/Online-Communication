@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+   <body>
+      <div style="float:left;">
+         <table border = 1>
+            <thead>
+               <td>Timestamp</td>
+               <td>Sensor1</td>
+
+            </thead>
+
+            {% for row in rows %}
+               <tr>
+                  <td>{{row["date"]}}</td>
+                  <td>{{row["value1"]}}</td>
+               </tr>
+            {% endfor %}
+         </table>
+      </div>
+      <div style="float:left;">
+         <table border = 1>
+            <thead>
+               <td>Timestamp</td>
+               <td>Sensor2</td>
+
+            </thead>
+
+            {% for row in rows2 %}
+               <tr>
+                  <td>{{row["date"]}}</td>
+                  <td>{{row["value1"]}}</td>
+               </tr>
+            {% endfor %}
+         </table>
+      </div>
+      <div style="float:left;">
+         <table border = 1>
+            <thead>
+               <td>Timestamp</td>
+               <td>Sensor3</td>
+
+            </thead>
+
+            {% for row in rows3 %}
+               <tr>
+                  <td>{{row["date"]}}</td>
+                  <td>{{row["value1"]}}</td>
+               </tr>
+            {% endfor %}
+         </table>
+      </div>
+      <div>
+         <table border = 1>
+            <thead>
+               <td>Timestamp</td>
+               <td>Sensor4</td>
+
+            </thead>
+
+            {% for row in rows4 %}
+               <tr>
+                  <td>{{row["date"]}}</td>
+                  <td>{{row["value1"]}}</td>
+               </tr>
+            {% endfor %}
+         </table>
+      </div>
+
+      <hr style="clear:both;">
+      <a href = "/">Go back to home page</a>
+      <a href = "list">Refresh</a>
+
+   </body>
+</html>
